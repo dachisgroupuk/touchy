@@ -1,6 +1,6 @@
 # Touchy
 
-TODO: Write a gem description
+Touch an attribute of the Rails current user every time models are updated.
 
 ## Installation
 
@@ -18,7 +18,22 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Add a call to `acts_as_touchy` to the models that should be monitored. Every time one of the models is created/updated/destroyed the `last_active_at` attribute of the current user will be updated with the current timestamp.
+
+Note that the `updated_at` attribute for the current user *will not* be updated.
+
+Example:
+
+    class BlogPost < ActiveRecord::Base
+      acts_as_touchy
+    end
+
+Every change to an instance of `BlogPost` will update the current user.
+
+## Acknowledgements
+
+This gem is based on a very similar functionality in the [`paper_trail` gem](https://github.com/airblade/paper_trail).
+Although the code has been adapted to suit a different need, most of it comes directly from `paper_trail`.
 
 ## Contributing
 

@@ -4,8 +4,8 @@ require File.expand_path('../lib/touchy/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Alessandro Morandi"]
   gem.email         = ["alessandro@dachisgroup.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Touch an attribute of the Rails current user every time models are updated}
+  gem.summary       = %q{Touch Rails current user on model updates}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($\)
