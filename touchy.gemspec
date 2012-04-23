@@ -14,4 +14,16 @@ Gem::Specification.new do |gem|
   gem.name          = "touchy"
   gem.require_paths = ["lib"]
   gem.version       = Touchy::VERSION
+  
+  gem.add_development_dependency('rake', '~> 0.9')
+  gem.add_development_dependency('rspec', '~> 2.9')
+  gem.add_development_dependency('sqlite3', '~> 1.3')
+  gem.add_development_dependency('database_cleaner', '~> 0.7')
+  # See http://blog.wyeworks.com/2011/11/1/ruby-1-9-3-and-ruby-debug for info on getting
+  #  ruby-debug working with Ruby 1.9.3-p0
+  gem.add_development_dependency('ruby-debug19', '~> 0.11')
+  gem.add_development_dependency('factory_girl', '~> 3.1')
+  gem.add_development_dependency('activerecord', '~> 3.2')
+  
+  gem.add_runtime_dependency('activesupport', '~> 3.2')
 end

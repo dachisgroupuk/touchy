@@ -1,5 +1,7 @@
 require "touchy/version"
 
+require 'active_support'
+
 require 'touchy/controller'
 require 'touchy/model'
 
