@@ -22,7 +22,7 @@ module Touchy
         if current_user
           current_user.class.record_timestamps = false
           current_user.update_attribute(:last_active_at, current_time)
-          current_user.class.record_timestamps = false
+          current_user.class.record_timestamps = true
         end
       end
     end

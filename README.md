@@ -30,6 +30,12 @@ Example:
 
 Every change to an instance of `BlogPost` will update the current user.
 
+## Testing
+
+Run:
+
+    $ rspec
+
 ## Acknowledgements
 
 This gem is based on a very similar functionality in the [`paper_trail` gem](https://github.com/airblade/paper_trail).

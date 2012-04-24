@@ -24,6 +24,7 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency('ruby-debug19', '~> 0.11')
   gem.add_development_dependency('factory_girl', '~> 3.1')
   gem.add_development_dependency('activerecord', '~> 3.2')
+  gem.add_development_dependency('timecop', '~> 0.3')
   
   gem.add_runtime_dependency('activesupport', '~> 3.2')
 end

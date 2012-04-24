@@ -10,6 +10,7 @@ require 'touchy'
 require 'active_record'
 require 'database_cleaner'
 require 'ruby-debug'
+require 'timecop'
 require 'factory_girl'
 FactoryGirl.find_definitions
 
@@ -20,6 +21,7 @@ class User < ActiveRecord::Base; end
 ActiveRecord::Base.connection.execute("DROP TABLE IF EXISTS users")
 ActiveRecord::Base.connection.create_table(:users) do |t|
     t.string :username
+    t.datetime :last_active_at
     t.timestamps
 end
 
